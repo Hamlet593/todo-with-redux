@@ -1,10 +1,13 @@
-import './todofooter.css';
+const Todofooter = ({todos, onClearCopmpleted}) => {
 
-const Todofooter = () => {
+    const completedSize = todos.filter(todo => todo.isCompleted).length
+
     return (
-        <div className="todofooter">
-            <span>1/4 Completed</span>
-            <button>Clear Completed</button>
+        <div>
+            <span>{completedSize}/{todos.length} Completed</span>
+            <button onClick={evt => {
+                onClearCopmpleted()
+            }}>Clear Completed</button>
         </div>
     );
 }
