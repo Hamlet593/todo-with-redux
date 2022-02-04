@@ -1,0 +1,19 @@
+.wrapper {
+    background-color: rgb(168, 166, 166);
+    width: 400px;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 28px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
